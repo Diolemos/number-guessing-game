@@ -29,7 +29,7 @@ void play_game(){
         cin>> userGuess ;
         
         if(userGuess == randomNumber){
-            cout<<"You got it!! the answer is" <<userGuess;
+            cout<<"You got it!! the answer is " <<userGuess;
             isGameOver = true;
         }else if(userGuess < randomNumber){
             tries --;
@@ -48,7 +48,7 @@ void play_game(){
     }
 int main()
 {   char wannaPlay ;
-    cout<<"Would you like to play a guessing game? 'y' or 'n'";
+    cout<<"\nWould you like to play a guessing game? 'y' or 'n'";
     cin>>wannaPlay;
     while(wannaPlay == 'y'){
         play_game();
