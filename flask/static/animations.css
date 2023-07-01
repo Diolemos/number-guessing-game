@@ -1,0 +1,61 @@
+@keyframes animatedText{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.text-animation__too-high{
+    
+    background: linear-gradient(
+        to right,
+        #f88746 20%,
+        #df8a1c 30%,
+        #d8e6f0 70%,
+        #f09409 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: animatedText 2s ease-in-out infinite alternate;
+}
+
+.text-animation__too-low{
+      
+    background: linear-gradient(
+        to right,
+        #be30f7 20%,
+        #b479e4 30%,
+        #74a9ee 70%,
+        #1f63f7 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: animatedText 5s ease-in-out infinite alternate;
+}
+.text-animation__out-of-bounds{
+    
+    background: linear-gradient(
+        to right,
+        #eb3a0e 20%,
+        #f1a33c 30%,
+        #eb3a0e 70%,
+        #ee8e11 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: animatedText 2s linear infinite normal;
+    
+    
+}

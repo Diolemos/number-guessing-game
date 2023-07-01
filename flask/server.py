@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import random
 
 secret_number = random.randint(1,10)
-print(f"pssss, the secret number is {secret_number}")
+
 app = Flask(__name__)
 
 @app.route("/")
@@ -24,7 +24,7 @@ def guessing_game(user_guess):
         return render_template("too_high.html")
     else:
         return render_template('right_guess.html')
-
+print(f"***pssss*** the secret number is {secret_number}")
 
 if __name__ == "__main__":
     app.run(debug=True)
