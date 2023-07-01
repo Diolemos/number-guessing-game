@@ -1,0 +1,23 @@
+:root {
+    --color-black: #000000;
+    --text-color: #f0f8ff;
+    --text-invalid: #aaa;
+}
+html{
+    overflow-x: hidden;
+}
+
+body{
+    width: 100vw;
+    text-align: center;
+    color: var(--text-color) ;
+    background-color: var(--color-black);
+    
+}
+
+strike{
+    color: #aaa;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: line-through;
+}

@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def view_home():
-    return "<h1>Flask guessing game</h1>"
+    return render_template("index.html")
 
 
 if __name__ == "__main__":
