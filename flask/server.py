@@ -15,7 +15,7 @@ def guessing_game(user_guess):
 
     
     if int(user_guess) < 1 or int(user_guess) > 10:
-        return "<h1>out of bounds, page not Found </h1>"
+        return render_template('out_of_bounds.html')
            
     
     if int(user_guess) < secret_number:
