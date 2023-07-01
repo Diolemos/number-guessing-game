@@ -59,3 +59,21 @@
     
     
 }
+
+.text-animation__right-answer{
+    background: linear-gradient(
+        to right,
+        #f8e805 20%,
+        #04ffc9 30%,
+        #e803fd 70%,
+        #06f82f 80%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: animatedText 500ms linear infinite normal;
+    
+    
+}
