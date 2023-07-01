@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import random
 
 secret_number = random.randint(1,10)
-
+print(f"pssss, the secret number is {secret_number}")
 app = Flask(__name__)
 
 @app.route("/")
