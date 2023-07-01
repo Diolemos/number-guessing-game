@@ -26,6 +26,12 @@ h1{
 font-size: 1.6rem;
 }
 
+.example{
+    font-size: 1.6rem;
+    color: #aaa;
+    font-style: italic;
+}
+
 strike{
     color: #aaa;
     font-size: 1.2rem;
