@@ -71,6 +71,24 @@ img{
     text-align: center;
 }
 
+.home-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    background-color: var(--color-black);
+    color: var(--text-color);
+    text-decoration: none; /* Remove underline for anchor tag */
+  }
+  
+  .arrow {
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid var(--text-color);
+    border-left: 2px solid var(--text-color);
+    transform: rotate(-45deg);
+  }
+
 @media (max-width: 768px) {
     .button__number {
       width: 50px;

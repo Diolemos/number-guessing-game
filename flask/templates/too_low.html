@@ -8,6 +8,7 @@
         <link rel="stylesheet" href={{url_for("static",filename="animations.css")}}>
     </head>
 <body>
+    {% include 'home_button.html' %}
     <div class="container__main">
         <h1> <span class="text-animation__too-low"" >Too low</span>, try again</h1> <br/>
         <img src={{url_for('static',filename='/images/lil_nate_big_block.gif')}} />
