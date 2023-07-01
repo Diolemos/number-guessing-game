@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="static/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
     <div class="container__main">
-        <h1>Help Lebron <strike>buy</strike> win another title</h1>
-    <img src={{url_for('static',filename='/images/1to9.webp' )}}/>
-    
-    <p>Jump on the bandwagon and Guess a number between 1 and 10 </p>
-    <img src={{url_for('static',filename='/images/lebron_greeting.gif' )}} />
-
+      <h1>Help Lebron <strike>buy</strike> win another title</h1>
+      <figure>
+        <!-- <img src={{url_for('static',filename='/images/1to9.webp' )}}/>  -->
+        <img src={{url_for('static',filename='/images/lebron_greeting.gif' )}} />
+      </figure>
+      
+      <p>Jump on the bandwagon and Guess a number between 1 and 10</p>
+      <div class="button_container">
+        <a href={{ url_for('guessing_game', user_guess=1) }} class="button__number">1</a>
+        <a href={{ url_for('guessing_game', user_guess=2) }} class="button__number">2</a>
+        <a href={{ url_for('guessing_game', user_guess=3) }} class="button__number">3</a>
+        <a href={{ url_for('guessing_game', user_guess=4) }} class="button__number">4</a>
+        <a href={{ url_for('guessing_game', user_guess=5) }} class="button__number">5</a>
+        <a href={{ url_for('guessing_game', user_guess=6) }} class="button__number">6</a>
+        <a href={{ url_for('guessing_game', user_guess=7) }} class="button__number">7</a>
+        <a href={{ url_for('guessing_game', user_guess=8) }} class="button__number">8</a>
+        <a href={{ url_for('guessing_game', user_guess=9) }} class="button__number">9</a>
+        <a href={{ url_for('guessing_game', user_guess=10) }} class="button__number">10</a>
+      </div>
     </div>
-    
-    
-    
-</body>
+  </body>
 </html>

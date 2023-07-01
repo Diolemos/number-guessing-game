@@ -3,6 +3,9 @@
     --text-color: #f0f8ff;
     --text-invalid: #aaa;
 }
+*{
+    box-sizing: border-box;
+}
 html{
     overflow-x: hidden;
 }
@@ -12,6 +15,9 @@ body{
     text-align: center;
     color: var(--text-color) ;
     background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 h1{
@@ -41,4 +47,22 @@ strike{
 
 img{
     border: 3px solid #ccc;
+}
+
+.button_container{
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.button__number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--text-color);
+
+    text-align: center;
 }
