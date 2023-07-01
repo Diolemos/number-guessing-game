@@ -8,10 +8,12 @@
 }
 html{
     overflow-x: hidden;
+    max-width: 100vw;
 }
 
 body{
-    width: 100vw;
+    
+    width: 100%;
     text-align: center;
     color: var(--text-color) ;
     background-color: var(--color-black);
@@ -54,6 +56,8 @@ img{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 12px;
+    justify-items: center; 
+    align-items: center; 
 }
 
 .button__number{
@@ -66,3 +70,24 @@ img{
 
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .button__number {
+      width: 50px;
+      height: 50px;
+    }
+
+    body h1{
+        font-size: 1.2;
+    }
+    img{
+        width: 80%;
+    }
+    .container__main{
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+  
+   
+  }
