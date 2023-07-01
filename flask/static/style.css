@@ -38,3 +38,7 @@ strike{
     font-style: italic;
     text-decoration: line-through;
 }
+
+img{
+    border: 3px solid #ccc;
+}
