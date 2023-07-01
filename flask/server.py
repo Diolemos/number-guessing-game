@@ -23,7 +23,7 @@ def guessing_game(user_guess):
     elif int(user_guess) > secret_number:
         return render_template("too_high.html")
     else:
-        return "<h1>You got it! </h1>"
+        return render_template('right_guess.html')
 
 
 if __name__ == "__main__":
